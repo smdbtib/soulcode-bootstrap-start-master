@@ -1,0 +1,24 @@
+#breakpoint-watcher {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
+    border-radius: 8px;
+    font-family: monospace;
+    color: white;
+    background-color: black;
+    padding: 0px 8px;
+}
+
+.fullscreen-layout {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.img-destaque {
+    height: 256px;
+    object-fit: cover;
+    filter: brightness(75%) blur(0.75px);
+}

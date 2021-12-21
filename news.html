@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="./styles/bootstrap-5.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>News</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+              <img src="./img/logo.png" height="32" style="filter: invert()"/>
+          </a>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+              class="offcanvas offcanvas-end bg-primary"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+              <img src="./img/logo.png" height="32" style="filter: invert()" />
+              <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              ></button>
+          </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="offcanvasNavbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >News</a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li>
+                              <a class="dropdown-item" href="./news.html">All News</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="./news.html#Sports">Sports</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="./news.html#Health">Health</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="./news.html#Politics">Politics</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="register.html">Register</a>
+                  </li>
+                  <li class="nav-item"> 
+                      <a class="nav-link" aria-current="page" href="contact-us.html">Contact us</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </nav>
+    <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        >
+        <div class="carousel-indicators">
+            <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+            ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            ></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img
+                src="./img/girl1.jpg"
+                class="d-block w-100 img-destaque"
+                alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Notícia em destaque 1</h5>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                autem expedita porro, eligendi iusto quis.
+                </p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img
+                src="./img/girl1.jpg"
+                class="d-block w-100 img-destaque"
+                alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Notícia em destaque 2</h5>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                autem expedita porro, eligendi iusto quis.
+                </p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img
+                src="./img/girl1.jpg"
+                class="d-block w-100 img-destaque"
+                alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Notícia em destaque 3</h5>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                autem expedita porro, eligendi iusto quis.
+                </p>
+            </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-3">
+        <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">Add News</button>
+    </div>
+
+    <section class="container my-3">
+        <h3 id="sports">Esportes</h3>
+        <div id="gridSports" class="row"></div>
+    </section>
+    <section class="container my-3">
+        <h3 id="saude">Saúde</h3>
+        <div id="gridSaude" class="row"></div>
+    </section>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <!-- MODAL NEWS -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">News</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-noticia" class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOAST -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div
+          id="liveToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <img
+              src="./img/logo.png"
+              height="20"
+              class="rounded me-2"
+              alt="..."
+            />
+            <strong class="me-auto">Bem-vindo!</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">Estamos em manutenção!</div>
+        </div>
+    </div>
+    <!-- MODAL FORMULÁRIO -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModal2Label">
+              Adicionar notícia
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form name="add_noticia">
+              <div class="mb-3">
+                <label for="titulo">Título</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="titulo"
+                  id="titulo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="img">Imagem</label>
+                <input
+                  type="file"
+                  accept=".jpg,.png"
+                  class="form-control"
+                  name="img"
+                  id="img"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="desc">Descrição</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="desc"
+                  id="desc"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="categoria">Categoria</label>
+                <select
+                  name="categoria"
+                  id="categoria"
+                  class="form-select"
+                  required
+                >
+                  <option selected disabled>Selecione uma categoria</option>
+                  <option value="esportes">Esportes</option>
+                  <option value="saude">Saúde</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Adicionar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
