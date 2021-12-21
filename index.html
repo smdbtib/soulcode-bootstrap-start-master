@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css">
     <link
       rel="stylesheet"
       href="./styles/bootstrap-5.1.3/css/bootstrap.min.css"
@@ -77,11 +78,109 @@
           </div>
       </div>
     </nav>
-    <main>
-      <div>
-        Index
-      </div>
-    </main>
+    <!-- BUNNER JUMBOTRON -->
+    <div class="bg-primary text-white my-3 mx-2 rounded-3">
+        <div class="container-fluid py-5 px-5">
+            <img src="img/logo.png" height="48" class="invert" alt="Logo News"/>
+            <h2 class="display-5">The best news is here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam laboriosam voluptate nam distinctio.</p>
+            <hr/>
+            <a href="news.html" class="btn btn-dark btn-lg">Read news</a>
+        </div>
+    </div>
+    <!-- NEWSLETTER -->
+    <div class="container-fluid my-2">
+        <h2 class="display-6">Sing our newsletter </h2>
+        <hr/>
+        <form action="">
+            <div class="row align-items-center">
+                <div class="col-sm-5">
+                    <input type="text" class="form-control mt-1" placeholder="Your first name">
+                </div>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control mt-1" placeholder="Your emial">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn bg-primary mt-1 text-white">To Sing</button>
+                </div> 
+            </div>
+        </form>
+        <hr/>
+    </div>
+    <!-- SPINNER -->
+    <div class="container my-4 text-center">
+        <h2 class="display-6 ">Loading news</h2>
+        <div class="spinner-border text-primary"></div>
+    </div>
+    <!-- CARDS E BADGES -->
+    <div class="container-fluid">
+        <h2 class="display-6 text-center">Monthly signature</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-xl">
+                <div class="card bg-primary text-light mb-3">
+                    <div class="card-body">
+                        <h5>U$ 25,00/Monthly</h5>
+                        <h6 class="card-subtitle badge bg-success">Basic plan</h6>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aperiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl">
+                <div class="card bg-dark text-light mb-3">
+                    <div class="card-body">
+                        <h5>U$ 55,00/Monthly</h5>
+                        <h6 class="card-subtitle badge bg-success">Well-informed plan</h6>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aperiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl">
+                <div class="card bg-warning mb-3">
+                    <div class="card-body">
+                        <h5>U$ 75,00/Monthly</h5>
+                        <h6 class="card-subtitle badge bg-dark">Premuim plan</h6>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aperiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl">
+                <div class="card bg-info mb-3">
+                    <div class="card-body">
+                        <h5>U$ 125,00/Monthly</h5>
+                        <h6 class="card-subtitle badge bg-dark">Platinum Top plan</h6>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aperiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TERMOS -->
+    <div class="container">
+        <h2 class="display-6 text-center">Terms</h2>
+        <div class="row">
+            <div class="col-sm-6 col-lg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio, aperiam, blanditiis, accusantium exercitationem accusamus vero odit sequi maxime inventore ad voluptas qui sit nisi.</p> 
+            </div>
+            <div class="col-sm-6 col-lg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio, aperiam, blanditiis, accusantium exercitationem accusamus vero odit sequi maxime inventore ad voluptas qui sit nisi.</p> 
+            </div>
+            <div class="col-sm-6 col-lg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio, aperiam, blanditiis, accusantium exercitationem accusamus vero odit sequi maxime inventore ad voluptas qui sit nisi.</p> 
+            </div>
+            <div class="col-sm-6 col-lg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio, aperiam, blanditiis, accusantium exercitationem accusamus vero odit sequi maxime inventore ad voluptas qui sit nisi.</p> 
+            </div>
+        </div>
+    </div>
+
     <script src="./scripts/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
   <footer class="bg-primary text-light p-4 text-center">
